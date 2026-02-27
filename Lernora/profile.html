@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/rosehot-free-version"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <title>Profile</title>
+  </head>
+  <body class="page">
+    <header class="header-content">
+      <a href="index.html" class="logo"
+        ><span class="logo-letter">L</span>ernora</a
+      >
+      <nav class="nav-bar">
+        <ul class="menu">
+          <li class="menu-item" id="menu-home">
+            <a href="index.html"><img src="assets/icons/house.png" />Home</a>
+          </li>
+          <li class="menu-item" id="menu-learn">
+            <a href="learn.html"><img src="assets/icons/book.png" />Learn</a>
+          </li>
+          <li class="menu-item" id="menu-profile">
+            <a href="profile.html"
+              ><img src="assets/icons/profile.png" />Profile</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="page-title">
+        <a href="./index.html">&#8592; Back To Dashboard</a>
+        <p>Profile</p>
+      </div>
+
+      <article class="daily-progress">
+        <div class="user-image">
+          <img src="assets/images/user.png" alt="" id="user-img" />
+        </div>
+        <div class="progress-text profile-text">
+          <h2><span class="user-name">Abhinay</span></h2>
+          <p>Member since January 2025.</p>
+          <div class="profile-quick-stats">
+            <span class="quick-stat level-text" id="qs1">Level 1</span>
+            <span class="quick-stat profile-xp" id="qs2">+200 XP</span>
+            <span class="quick-stat profile-streak" id="qs3">1 Day Streak</span>
+          </div>
+        </div>
+        <button id="reset-progress-btn" class="hero-btn">Reset Progress</button>
+      </article>
+
+      <section class="profile-stats-section">
+        <div class="profile-stats-title">
+          <h2>Your Statistics</h2>
+          <img src="assets/icons/weighing-scale.gif" alt="" />
+        </div>
+        <div class="profile-stats-grid">
+          <div class="progress-item">
+            <div id="progress-item1">
+              <img
+                src="assets/icons/trendup.png"
+                alt=""
+                class="progress-icon"
+                aria-hidden="true"
+              /><!--bolt-icon-->
+            </div>
+            <h3 class="total-xp">2450<!--total-xp--></h3>
+            <p>Total XP Earned</p>
+          </div>
+
+          <div class="progress-item">
+            <div id="progress-item2">
+              <img
+                src="assets/icons/calendardots.png"
+                alt=""
+                class="progress-icon"
+                aria-hidden="true"
+              /><!--fire-icon-->
+            </div>
+            <h3 class="day-streak">07<!--day-streak--></h3>
+            <p>Current Streak</p>
+          </div>
+
+          <div class="progress-item">
+            <div id="progress-item3">
+              <img
+                src="assets/icons/medal.png"
+                alt=""
+                class="progress-icon"
+                aria-hidden="true"
+              /><!--aim-icon-->
+            </div>
+            <h3 class="missions-done">28<!--missions-done--></h3>
+            <p>Lessons Done</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="achievements-section">
+        <div class="achievements-title">
+          <h2>Achievement Showcase</h2>
+          <img
+            src="assets/icons/hat.gif"
+            alt=""
+            id="aim-board"
+          /><!--target-icon-->
+        </div>
+        <div
+          class="achievements-container profile-achievements"
+          id="achievements-list"
+        ></div>
+      </section>
+
+      <section class="activity-section">
+        <div class="activity-container"></div>
+      </section>
+    </main>
+
+    <footer class="footer-content">
+      <div class="footer-quick-links">
+        <div class="footer-branding">
+          <a href="index.html" class="logo"
+            ><span class="logo-letter">L</span>ernora</a
+          >
+          <p>Transform your learning journey<br />into an epic adventure.</p>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><h4>Explore</h4></li>
+            <li><a href="#">Learning Map</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><h4>Support</h4></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><h4>Legal</h4></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 Lernora. All rights reserved.</p>
+        <p>Made with &#10084;&#65039; for learners worldwide</p>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

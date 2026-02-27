@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/rosehot-free-version"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <title>Dashboard</title>
+  </head>
+
+  <body class="page">
+    <header class="header-content">
+      <a href="index.html" class="logo"
+        ><span class="logo-letter">L</span>ernora</a
+      >
+      <nav class="nav-bar">
+        <ul class="menu">
+          <li class="menu-item" id="menu-home">
+            <a href="index.html"><img src="assets/icons/house.png" />Home</a>
+          </li>
+          <li class="menu-item" id="menu-learn">
+            <a href="learn.html"><img src="assets/icons/book.png" />Learn</a>
+          </li>
+          <li class="menu-item" id="menu-profile">
+            <a href="profile.html"
+              ><img src="assets/icons/profile.png" />Profile</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              Welcome To<br />
+              <span class="hero-logo"
+                ><span class="logo-letter">L</span>ernora</span
+              >
+            </h1>
+            <p id="hero-para">
+              Transform your learning journey into an epic adventure.<br />
+              Level up, unlock achievements, and master new skills!
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a href="learn.html"
+              ><button id="start-learning-btn" class="hero-btn">
+                <img src="assets/icons/book.png" />Start Learning
+              </button>
+            </a>
+            <a href="profile.html">
+              <button id="view-profile-btn" class="hero-btn">
+                <img src="assets/icons/profile.png" />View Profile
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visuals">
+          <img
+            src="assets/images/boy.png"
+            alt=""
+            id="boy-img"
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+
+      <section class="progress-section">
+        <article class="daily-progress">
+          <div class="user-image">
+            <img src="assets/images/user.png" alt="" id="user-img" />
+          </div>
+          <div class="progress-text">
+            <h2 class="greeting">
+              Keep Going, <span class="user-name">Abhinay</span>!&#129395;
+            </h2>
+            <p class="streak-text">
+              You’re on <span class="day-streak">7</span> day streak! Complete
+              today's mission to keep it going.
+            </p>
+            <p>Daily Goal <span class="progress-percent"></span></p>
+            <div class="progress-bar">
+              <div class="progress-bar__fill"></div>
+            </div>
+            <!-- Progress bar -->
+          </div>
+        </article>
+
+        <div class="progress-stats-grid">
+          <div class="progress-item">
+            <div id="progress-item1">
+              <img
+                src="assets/icons/bolt.png"
+                alt=""
+                class="progress-icon"
+                aria-hidden="true"
+              /><!--bolt-icon-->
+            </div>
+            <h3 class="total-xp"><!--total-xp--></h3>
+            <p>Total XP</p>
+          </div>
+
+          <div class="progress-item">
+            <div id="progress-item2">
+              <img
+                src="assets/icons/fire.png"
+                alt=""
+                class="progress-icon"
+                aria-hidden="true"
+              /><!--fire-icon-->
+            </div>
+            <h3 class="day-streak">07<!--day-streak--></h3>
+            <p>Day Streak</p>
+          </div>
+
+          <div class="progress-item">
+            <div id="progress-item3">
+              <img
+                src="assets/icons/aim.png"
+                alt=""
+                class="progress-icon"
+                aria-hidden="true"
+              /><!--aim-icon-->
+            </div>
+            <h3 class="missions-done">28<!--missions-done--></h3>
+            <p>Missions Done</p>
+          </div>
+
+          <div class="progress-item">
+            <div id="progress-item4">
+              <img
+                src="assets/icons/small_trophy.png"
+                alt=""
+                class="progress-icon"
+                aria-hidden="true"
+              /><!--trophy-icon-->
+            </div>
+            <h3 class="badges-earned">20<!--badges-earned--></h3>
+            <p>Badges Earned</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="achievements-section">
+        <div class="achievements-title">
+          <h2>Recent Achievements</h2>
+          <img
+            src="assets/icons/target.gif"
+            alt=""
+            id="aim-board"
+          /><!--target-icon-->
+        </div>
+
+        <div class="achievements-container" id="dashboard-achievements"></div>
+
+        <div class="achievements-next">
+          <h3>Ready For Your Next Quest?</h3>
+          <p>
+            Jump back into your learning journey and discover new worlds of
+            knowledge!
+          </p>
+          <button id="next-learning-btn" class="hero-btn">
+            <a href="learn.html"
+              >Continue Learning &#8594;<!--right-arrow-icon--></a
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-content">
+      <div class="footer-quick-links">
+        <div class="footer-branding">
+          <a href="index.html" class="logo"
+            ><span class="logo-letter">L</span>ernora</a
+          >
+          <p>Transform your learning journey<br />into an epic adventure.</p>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><h4>Explore</h4></li>
+            <li><a href="#">Learning Map</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><h4>Support</h4></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><h4>Legal</h4></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 Lernora. All rights reserved.</p>
+        <p>Made with &#10084;&#65039; for learners worldwide</p>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
